@@ -1,7 +1,4 @@
-﻿using System.Data;
-using CSL.Encryption;
-
-namespace TextToGibberish.Main
+﻿namespace TextToGibberish.Main
 {
     public class EntryPoint
     {
@@ -28,6 +25,7 @@ namespace TextToGibberish.Main
             string result = LiteralSin(EncryptionFactory(valtofac));
 
             Console.WriteLine(result);
+            Console.ReadKey();
         }
 
         public static string LiteralSin(string val)
